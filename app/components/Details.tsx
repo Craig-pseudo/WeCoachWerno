@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'; 
 
 const Details = () => {
   return (
@@ -19,10 +20,12 @@ const Details = () => {
       </div>
 
       <div className="md:w-2/5 flex justify-center">
-        <img
-          src="/images/Werno.jpeg"
-          alt="Coach Werno Van Wyk"
-          className="w-60 h-60 rounded-md shadow-md" />
+        <Image
+        src="/images/Werno.jpeg"
+        alt="Coach Werno Van Wyk"
+        width={240}     // 60 * 4 (because w-60 is 15rem, 1rem = 16px, so 15rem * 16 = 240px)
+        height={240}    // same for height
+        className="rounded-md shadow-md" />
       </div>
       
     </div>
