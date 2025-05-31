@@ -21,7 +21,7 @@ const Details = () => {
 
       <div className="md:w-2/5 flex justify-center">
         <Image
-        src="/images/Werno.jpeg"
+        src="/wecoachacademy/images/Werno.jpeg"
         alt="Coach Werno Van Wyk"
         width={240}     // 60 * 4 (because w-60 is 15rem, 1rem = 16px, so 15rem * 16 = 240px)
         height={240}    // same for height
