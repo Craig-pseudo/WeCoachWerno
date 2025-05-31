@@ -27,7 +27,6 @@ jobs:
       - name: Build and export
         run: |
           npm run build
-          npm run export
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
