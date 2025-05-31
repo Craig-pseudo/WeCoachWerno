@@ -1,26 +1,166 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  //background-image: url('/images/cricket background.jpg');
+  background-color: #ebf8ff;
+  color: black;
+  //padding: 1rem;
+}
+
+.contact {
+  padding-left: 1rem;
+}
+
+.timetable{
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.directions{
+  padding-left: 1rem;
+  font-size: 23px;
+}
+
+.us{
+  height: 400px;
+  padding-left: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  jusitfy-content: space-around;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* h-[400px] pl-1 mt-3 flex items-center mt-auto w-full */
+.us-info {
+  padding-top: 2rem;
+  width: 60%;
+  padding-left: 2rem;
+  overflow: auto;
+}
+
+.us-info h1 {
+  font-size: 23px;
+  padding-bottom: 3rem;
+}
+
+.werno-img {
+  padding-right: 3rem;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  padding: 20px;
+}
+
+.werno-img h1{
+  font-size: 23px;
+}
+
+.page{
+  text-align: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.timetable {
+  padding-left: 2rem;
+}
+
+.table_info {
+  align-items: left;
+}
+
+
+table {
+  box-shadow: 1px 1px 5px #B7C9E2;
+  border: 1px solid #ddd;
+  border-collapse: seperate;
+  border-left: 0;
+  border-radius: 4px;
+  border-spacing: 0px;
+  width: 80%;
+}
+
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-collapse: seperate;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  background-color: white;
+}
+
+th {
+  background-color: #ddd;
+}
+
+td {
+  padding: 5px 10px;
+  text-align: left;
+  vertical-align: top;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  border-top: 1px solid #ddd;
+}
+
+thead:first-child tr:first-child th:first-child,
+tbody:first-child tr:first-child td:first-child {
+  border-radius: 4px 0 0 0;
+}
+thead:last-child tr:last-child th:last-child,
+thead:last-child tr:last-child th:last-child {
+  border-radius: 0 0 0 4px;
+}
+
+.table{
+  font-size: 23px;
+}
+
+
+.page__title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 25px;
+  border-radius: 7px;
+}
+.contact_body {
+  padding-left: 2rem;
 }

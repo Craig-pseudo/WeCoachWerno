@@ -1,9 +1,23 @@
-export default function HomePage() {
+import Footer from './components/Footer'
+import Header from './components/Header'
+import GoogleMap from './components/GoogleMap'
+import EmailUs from './components/EmailUs'
+import WhoWeAre from './components/WhoWeAre'
+import Calender from './components/Calender'
+import Details from './components/Details'
+
+export default function Home() {
   return (
-    <main style={{ display: "flex", height: "100vh", justifyContent: "center", alignItems: "center", background: "#f0f4ff" }}>
-      <h1 style={{ color: "#2563EB", fontSize: "3rem", fontWeight: "bold" }}>
-        👋 Hello, world!
-      </h1>
+    <main>
+      <div>
+      <Header/>
+      <WhoWeAre/>
+      <Details/>
+      <Calender /> 
+      <EmailUs />
+      <GoogleMap/>
+      <Footer/>
+      </div>
     </main>
-  );
+  )
 }
