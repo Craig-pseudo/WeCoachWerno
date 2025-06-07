@@ -1,12 +1,16 @@
 import React from 'react'
 import Image from 'next/image'; 
+import { useRouter } from 'next/router';
 const WhoWeAre = () => {
+
+  const { basePath } = useRouter();
+
   return (
     <div className="rounded-lg mt-4 bg-white flex flex-col md:flex-row items-center justify-evenly pt-3 pb-3 mb-4">
       <div className="mb-6 md:mb-0">
         <Image
           className="h-60 w-60 rounded-md "
-          src="/images/image.png"
+          src={`${basePath}/images/image.png`}
           alt="Coach Werno"
           width={240}
           height={240}
