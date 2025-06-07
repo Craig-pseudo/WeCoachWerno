@@ -6,7 +6,7 @@ const WhoWeAre = () => {
       <div className="mb-6 md:mb-0">
         <Image
           className="h-60 w-60 rounded-md "
-          src={`${process.env.PUBLIC_URL}/images/image.png`}
+          src={`/images/image.png`}
           alt="Coach Werno"
           width={240}
           height={240}
