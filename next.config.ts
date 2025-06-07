@@ -5,8 +5,8 @@ const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: isGitHubPages ? '/wecoachacademywerno' : '',
-  assetPrefix: isGitHubPages ? '/wecoachacademywerno/' : '',
+  basePath: isGitHubPages ? '/WeCoachWerno' : '',
+  assetPrefix: isGitHubPages ? '/WeCoachWerno/' : '',
   images: {
     unoptimized: true,
   },
