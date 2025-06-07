@@ -1,10 +1,10 @@
 import React from 'react'
-//import Image from 'next/image'; 
+import Image from 'next/image'; 
 const WhoWeAre = () => {
   return (
     <div className="rounded-lg mt-4 bg-white flex flex-col md:flex-row items-center justify-evenly pt-3 pb-3 mb-4">
       <div className="mb-6 md:mb-0">
-        <img
+        <Image
           className="h-60 w-60 rounded-md "
           src={`${process.env.PUBLIC_URL}/images/image.png`}
           alt="Coach Werno"
