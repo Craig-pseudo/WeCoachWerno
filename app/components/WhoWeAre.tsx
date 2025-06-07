@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const basePath = '/WeCoachWerno'; // ✅ your GitHub Pages base path
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const WhoWeAre = () => {
   return (
