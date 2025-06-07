@@ -22,7 +22,7 @@ const WhoWeAre = () => {
           Welcome to WeCoach Cricket Academy!
         </p>
         <p className="text-sm text-black leading-relaxed">
-          At WeCoach, we{'\' '}re passionate about building skill, discipline, and a lasting love for cricket. Whether you{'\' '}re picking up a bat for the first time or perfecting your technique, our dedicated coaches are here to guide you every step of the way.
+          At WeCoach, we&apos;re passionate about building skill, discipline, and a lasting love for cricket. Whether you&apos;re picking up a bat for the first time or perfecting your technique, our dedicated coaches are here to guide you every step of the way.
           <br className="mb-2" />
           <br />
           Join us to train, grow, and compete — as we shape confident cricketers through expert coaching, smart strategy, and true sportsmanship.
