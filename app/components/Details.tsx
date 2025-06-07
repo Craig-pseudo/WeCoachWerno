@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'; 
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const Details = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-6 py-6 max-w-5xl mx-auto rounded-lg mb-4 bg-blue-300">
@@ -21,7 +23,7 @@ const Details = () => {
 
       <div className="md:w-2/5 flex justify-center">
         <Image
-        src="/wecoachacademy/images/Werno.jpeg"
+        src={`${basePath}/images/Werno.jpeg`}
         alt="Coach Werno Van Wyk"
         width={240}     // 60 * 4 (because w-60 is 15rem, 1rem = 16px, so 15rem * 16 = 240px)
         height={240}    // same for height
