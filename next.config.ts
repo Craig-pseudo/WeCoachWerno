@@ -1,6 +1,8 @@
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+import { NextConfig } from 'next'
 
-const nextConfig = {
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+
+const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   basePath: isGitHubPages ? '/WeCoachWerno' : '',
@@ -8,6 +10,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-};
+  publicRuntimeConfig: {
+    // Expose basePath to runtime config so you can use it dynamically in components
+    basePath: isGitHubPages ? '/WeCoachWerno' : '',
+  },
+}
 
-export default nextConfig;
+export default nextConfig
