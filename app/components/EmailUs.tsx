@@ -7,7 +7,7 @@ const EmailUs = () => {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement); // Type cast to HTMLFormElement
 
-    formData.append("access_key", "17b40bc4-0479-49e9-aead-914c9fe95172");
+    formData.append("access_key", "5ed7c88b-0798-440e-9695-79ab2783ae7e");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
