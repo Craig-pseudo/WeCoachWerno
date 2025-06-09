@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className='flex justify-around text-center items-center text-3xl sm:text-xs md:text-3xl lg:text-4xl'>
             <a className='p-2' href='https://www.instagram.com/wecoachacademy/?igsh=MjV4OHZoY3U1OW83#'><FaInstagram /></a>
-            <a className='p-2' href='https://www.facebook.com/'><FaFacebookSquare /></a>
+            <a className='p-2' href='https://www.tiktok.com/@wecoach24?_t=ZM-8x42zZV68Yy&_r=1'><FaFacebookSquare /></a>
             <a className='p-2' href='https://www.youtube.com/'><IoLogoYoutube /></a>
             <a className='p-2' href='https://www.tiktok.com/'><AiFillTikTok /></a>
         </div>
