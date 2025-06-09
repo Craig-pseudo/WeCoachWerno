@@ -26,21 +26,21 @@ const EmailUs = () => {
     }
   };
 
-  return (
-    <div>
+ return (
+    <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
       <div className="pt-3 w-full max-w-screen-lg mx-auto">
-        <div className="pl-8">
+        <div className="pl-2 sm:pl-4 md:pl-8">
           <h1 className="text-2xl font-semibold text-blue-900">Get In Touch</h1>
         </div>
 
-        <section className="px-8 flex justify-start h-auto flex-col md:flex-row">
+        <section className="flex justify-start flex-col md:flex-row">
           <form
             onSubmit={onSubmit}
-            className="w-full md:w-1/2 bg-white border-2 border-gray-300 rounded-lg shadow-md text-gray-800 my-[25px] mx-auto overflow-y-auto md:h-auto md:my-0 sm:p-[10px]"
+            className="w-full md:w-1/2 bg-white border-2 border-gray-300 rounded-lg shadow-md text-gray-800 my-6 mx-auto p-4 sm:p-5 md:p-6"
           >
-            <h2 className="text-[22px] md:text-[20px] sm:text-[18px]">Contact Form</h2>
+            <h2 className="text-[20px] sm:text-[18px] mb-4">Contact Form</h2>
 
-            <div className="mt-5">
+            <div className="mt-4">
               <label>Full Name</label>
               <input
                 type="text"
@@ -66,7 +66,7 @@ const EmailUs = () => {
               <label>Your Message</label>
               <textarea
                 name="message"
-                className="w-full h-30 bg-transparent border-2 border-gray-300 outline-none rounded-md px-3 text-gray-800 mt-2 resize-none"
+                className="w-full h-32 bg-transparent border-2 border-gray-300 outline-none rounded-md px-3 text-gray-800 mt-2 resize-none"
                 placeholder="Enter Your Message"
                 required
               ></textarea>

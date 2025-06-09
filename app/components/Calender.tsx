@@ -20,28 +20,31 @@ const Calender = () => {
           ></iframe>
         </div>
 
-        <div className="flex-1 bg-white rounded-lg shadow p-4">
-          <table className="w-full border border-gray-300 text-sm text-left">
-            <thead className="bg-gray-100 font-semibold">
-              <tr>
-                <th className="border px-3 py-2">Session Type</th>
-                <th className="border px-3 py-2">45 Min</th>
-                <th className="border px-3 py-2">1 Hour</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border px-3 py-2">Private Session</td>
-                <td className="border px-3 py-2">R325.00</td>
-                <td className="border px-3 py-2">R425.00</td>
-              </tr>
-              <tr>
-                <td className="border px-3 py-2">Group Session</td>
-                <td className="border px-3 py-2">R200.00</td>
-                <td className="border px-3 py-2">R250.00</td>
-              </tr>
-            </tbody>
-          </table>
+       <div className="flex-1 bg-white rounded-lg shadow p-4">
+  <table className="w-full border border-gray-300 text-sm text-left">
+    <thead className="bg-gray-100 font-semibold">
+      <tr>
+        <th className="border px-3 py-2">Session Type</th>
+        <th className="border px-3 py-2">30 Min</th>
+        <th className="border px-3 py-2">45 Min</th>
+        <th className="border px-3 py-2">1 Hour</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border px-3 py-2">Private Session</td>
+        <td className="border px-3 py-2">R220.00</td>
+        <td className="border px-3 py-2">R325.00</td>
+        <td className="border px-3 py-2">R425.00</td>
+      </tr>
+      <tr>
+        <td className="border px-3 py-2">Group Session</td>
+        <td className="border px-3 py-2">-</td>
+        <td className="border px-3 py-2">R200.00</td>
+        <td className="border px-3 py-2">R250.00</td>
+      </tr>
+    </tbody>
+  </table>
 
           <p className="text-center text-xs text-gray-900 mt-3 italic">
             *Available every day (Mon-Fri) from 09:00 to 17:00*
