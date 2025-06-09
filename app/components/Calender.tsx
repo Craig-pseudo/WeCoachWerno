@@ -12,7 +12,7 @@ const Calender = () => {
 
         <div className="flex-1 rounded-lg overflow-hidden shadow-md">
           <iframe
-            src="https://calendly.com/vanwykwerno"
+            src="https://calendly.com/wecoachlittlefalls"
             width="100%"
             height="500px"
             style={{ border: "none" }}
